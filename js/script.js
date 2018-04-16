@@ -3,6 +3,12 @@
  		event.preventDefault();
  		loadPhoto($(this));
 	});
+	 /*	On cache les paragraphes pour les demarches*/
+	 	$("#famille").hide();
+	 	$("#sante").hide();
+	  	$("#travail").hide();
+	  	$("#papiers").hide();
+	  	$("#logement").hide();
 
 	$("body").on("click", ".ancreFleche", function(event) { 
 			var recup = $(this).attr("rel");
@@ -14,7 +20,65 @@
 		$(".voile").fadeOut();
  		$(".lightbox").fadeOut();
 	});
+	/*	---------------DEMARCHES ----------------------	*/
 
+	$("#familleB").click(function() {
+		$("#famille").fadeIn();
+	});
+
+	$("#familleB2").click(function() {
+		$("#famille").fadeOut();
+	});
+
+	$("#santeB").click(function() {
+		$("#sante").fadeIn();
+	});
+
+	$("#santeB2").click(function() {
+		$("#sante").fadeOut();
+	});
+
+	$("#travailB").click(function() {
+		$("#travail").fadeIn();
+	});
+
+	$("#travailB2").click(function() {
+		$("#travail").fadeOut();
+	});
+
+	$("#papiersB").click(function() {
+		$("#papiers").fadeIn();
+	});
+
+	$("#papiersB2").click(function() {
+		$("#papiers").fadeOut();
+	});
+
+	$("#logementB").click(function() {
+		$("#logement").fadeIn();
+	});
+
+	$("#logementB2").click(function() {
+		$("#logement").fadeOut();
+	});
+
+	$("#allshow").click(function() {
+		$("#famille").fadeIn();
+		$("#sante").fadeIn();
+		$("#travail").fadeIn();
+		$("#papiers").fadeIn();
+		$("#logement").fadeIn();
+	});
+
+	$("#allhide").click(function() {
+		$("#famille").fadeOut();
+		$("#sante").fadeOut();
+		$("#travail").fadeOut();
+		$("#papiers").fadeOut();
+		$("#logement").fadeOut();
+	});
+
+	/*	---------------FIN DEMARCHES ----------------------	*/
 });
 
   function loadPhoto(maPhoto)

@@ -17,6 +17,8 @@ body{
 
 }
 
+
+
 /*-----------------------CONTENEUR-BACKGROUNDS------------------------*/
 
 #conteneurnav{
@@ -34,6 +36,7 @@ body{
 }
 
 #conteneur{
+
 	border:solid grey;
 	border-style: outset;
 	width: 88%;
@@ -44,6 +47,10 @@ body{
   	margin-right: auto;
   	padding: 1em;
   	position:relative;
+
+}
+#conteneur a:visited{
+color:blue;
 
 }
 
@@ -89,6 +96,7 @@ nav ul li {
 
 
 nav ul li a {
+
  display:block;
  width:150px;
  color:black;
@@ -485,10 +493,10 @@ background-color: lightgrey;
 /*------------------------------FIN DES RESULTAT ELECTIONS----------------------------------*/
 /*-----------------------------------ETAT CIVIL-------------------------------------*/
 
-#demarches li {
+#demarchesetatcivil li {
 	list-style-type: none;
 }
-#demarches li:before{
+#demarchesetatcivil li:before{
 	content: "→ ";
 
 }
@@ -607,7 +615,72 @@ background-color: lightgrey;
 
 
 
+/*------------------------------FIN VILLAGE EN PHOTO---------------------------------*/
+/*-----------------------------------DEMARCHES-------------------------------------*/
 
+#famille p , #famille a , #famille h2, #sante p , #sante a , #sante h2, #travail p , #travail a , #travail h2, #papiers p , #papiers a , #papiers h2, #logement p , #logement a , #logement h2{
+		margin: 0.25em;
+
+}
+
+#famille li , #sante li, #travail li, #papiers li, #logement li{
+	padding-bottom: 1em;
+
+}
+
+#famille ul , #sante ul , #travail ul , #papiers ul , #logement ul {
+	list-style-type: none;
+
+}
+
+#famille h2:before{
+	content: "→ ";
+
+}
+
+#sante h2:before {
+	content: "→ ";
+
+}
+
+#travail h2:before {
+	content: "→ ";
+
+}
+
+#papiers h2:before {
+	content: "→ ";
+
+}
+
+#logement h2:before {
+	content: "→ ";
+
+}
+
+#boutons {
+	vertical-align: top;
+	width: 20%;
+
+}
+#boutons input {
+	width: 100%;
+}
+
+#demarches {
+	width: 75%;
+	margin-left: 3em;
+	height: 500px;
+
+}
+
+#boutons, #demarches {
+	display: inline-block;
+
+}
+
+/*------------------------------FIN DEMARCHES---------------------------------*/
+/*-----------------------------------DEMARCHES-------------------------------------*/
 
 
 
