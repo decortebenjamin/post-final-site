@@ -1,6 +1,5 @@
 
 body{
-
 	background-image: url(mairie.jpg) ;
 	background-size:100%;
 	background-repeat: no-repeat;
@@ -8,14 +7,19 @@ body{
     background-position: center bottom; 
     margin: 0;
     padding:0;
-	/*background-repeat: no-repeat;
-	width: auto*/
+
+}
+
+*{
+	font-style:normal;
+	font-weight: normal;
+	font-family: didot;
+
 }
 
 /*-----------------------CONTENEUR-BACKGROUNDS------------------------*/
 
 #conteneurnav{
-
 	border:solid grey;
 	border-style: outset;
 	border-top: none;
@@ -26,25 +30,26 @@ body{
 }
 
 #conteneurvide{
-
 	height: 300px;
 }
-
-
 
 #conteneur{
 	border:solid grey;
 	border-style: outset;
-	width: 90%;
+	width: 88%;
 	background-color: lightgrey;
-	height: 1000px;
+	height: auto;
+	min-height: 400px;
 	margin-left: auto;
   	margin-right: auto;
+  	padding: 1em;
+  	position:relative;
+
 }
 
 #conteneurvidebas{
-
 	height: 50px;
+
 }
 
 #conteneurfooter{
@@ -57,6 +62,7 @@ body{
  	margin-right: auto;
 
 }
+
 /*------------------------------FIN DES BACKGROUNDS-----------------------------------*/
 /*-----------------------------------NAV-------------------------------------*/
 
@@ -65,18 +71,21 @@ nav {
 	width: auto;
 	z-index: 4;
 	text-align: center;
+
 }
 
 nav ul {
  list-style-type:none;
  display: inline-block;
  margin-left:-40px;
+
 }
 
 nav ul li {
  display: inline-block;
  background-color:lightgrey;
- }
+
+}
 
 
 nav ul li a {
@@ -86,27 +95,32 @@ nav ul li a {
  text-decoration:none;
  padding: .55em;
  text-align: center;
- }
+
+}
 
 nav ul li a:hover {
  color:white;
  background-color: #666666;
- }
+
+}
 
  nav ul li ul {
  display:none;
    z-index: 4;
- }
+
+}
 
 nav ul li:hover ul {
  display:block;
  margin-left: -40px;
  width:12%;
- }
+
+}
 
 nav ul li ul {	
  position:absolute;
- }
+
+}
 
 
 /*------------------------------FIN DU NAV----------------------------------*/
@@ -115,7 +129,6 @@ footer{
 	background-color: lightgrey;
 	bottom: 0;
 	width: 100%;
-/*	border-top-style:solid; */
 
 }
 
@@ -123,86 +136,105 @@ footer #ouverture , footer #contact , footer #copyright{
 	display: inline-block;
 	width: 33%;
 	vertical-align: center;
+
 }
 
-footer #ouverture , #contact{
+footer #ouverture , footer #contact{
 	text-align: center;
+
 }
 
 footer #copyright{
 	text-align: right;
+
 }
 
 footer #ouverture , #contact p{
 	margin-top: 0px;
+
 }
 
 footer #ouverture p{
 	margin-bottom:0px;
 	margin-top: 0px;
+
 }
 
 footer #contact p{
 	margin-bottom:0px;
 	margin-top: 0px;
+
 }
 
 footer #ouverture h2{
 	margin-top: 5px;
 	margin-bottom: 5px;
-}
 
+}
 
 /*------------------------------FIN DU FOOTER----------------------------------*/
 /*-----------------------------------CA2BM-------------------------------------*/
 
+#logoca2bm{
+width:auto ;
+text-align: center;
 
+}
 
+#coordonneesca2bm p, #coordonneesca2bm img{
+ 	padding-left:1em;
 
+}
 
+#carteca2bm{
+	width: 25%;
+
+}
+
+#carteca2bm, #communes{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+
+}
+
+#communes{
+	width: 70%;
+
+}
+
+#com1 , #com2 ,#com3{
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	padding-left :10px; 
+
+}
+
+#com2, #com3 {
+	border-left: lightgrey solid 2px;
+
+}
+
+#competences li{
+	list-style-type: none;
+
+}
+
+#competences li:before{
+	content: "→ ";
+
+}
+
+ #coordomap iframe , #coordomap #coordonneesca2bm{
+
+	display: inline-block;
+	vertical-align: top;
+}
 
 /*------------------------------FIN DE LA CA2BM----------------------------------*/
-/*-----------------------------------CA2BM-------------------------------------*/
+/*-----------------------------------INDEX-------------------------------------*/
 
-
-
-/*
-html {
-  height: 100%;
-}
-
-
-a:visited {
-
-	color: blue;
-
-}
-
-
-*{
-	font-style:normal;
-	font-weight: normal;
-	font-family: didot;
-}
-
-
- body #content {
-	margin:  2em;	
-	border: solid lightgrey;
-	padding: 0em 1em 1em 1em;
-}
-
- body {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	padding-bottom: 100px;
-	min-height: 100%;
-}
-
-
-
-/*--------------------ACCUEIL-------------------------
 #photomrmaire{
 	width: 25%;
 
@@ -259,14 +291,15 @@ display: inline-block;
 
  }
 
-/*--------------------ACCUEIL-------------------------*/
-/*--------------------POUR LES ELUS-------------------------
+/*------------------------------FIN DE L'INDEX----------------------------------*/
+/*-----------------------------------ELUS-------------------------------------*/
 
 .container {
   position: relative;
-  width: 15%;
-  	display:inline-block;
-  	margin: 10px;
+  width: 18%;
+  display:inline-block;
+  margin: 10px;
+
 }
 
 .image {
@@ -302,68 +335,335 @@ display: inline-block;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 
 #elus{
 width:100%;
 padding-bottom:10px;
+text-align: center;
+  	margin-left: auto;
+ 	margin-right: auto;
 
 }
 #elus img{
 width: 100%;
 }
-#elus div{
+
+
+
+/*------------------------------FIN DES ELUS----------------------------------*/
+/*-----------------------------------DECHETS-------------------------------------*/
+
+
+#dechetterie #lieu, #dechetterie #un,  #dechetterie #deux  {
+	display: inline-block;
+
+}
+
+#dechetterie #un, #dechetterie #deux {
+	display: inline-block;
+	margin: 1em;
+	padding-left: 1em;
+	text-align: center;
+
+}
+ #un , #deux , #fermeture {
+	text-align: center;
+
+} 
+#dechetterie #heures{
+	text-align: center;
+
+}
+#dechetterie h3{
+	padding-left:1em; 
+	margin: 0px;
+
+}
+
+#dechetterie #deux {
+	border-left: solid lightgrey ;
+
+}
+
+#dechetterie #adresse {
+	text-align: left;
+
+}
+
+#dechetterie #lieu{
+	vertical-align: top;
+
+}
+
+#dechetterie img{
+	vertical-align: top;
+
+}
+
+#dechetterie h3{
+	padding-left: 8em;
+}
+
+#dechetterie2 {
 	text-align: center;
 }
-#elus div h1{
-	font-size: 20px;
+#dechetterie #attention h3{
+	padding-left:0em; 
+	margin: 0px;
+
 }
-/*--------------------FIN DU CODE POUR LES ELUS-------------------------*/
-/*----------------------- RESULTAT ELECTIONS-----------------
+
+#ramassagedechet li{
+	list-style-type: none;
+
+}
+
+
+#ramassagedechet li:before{
+	content: "→ ";
+
+}
+
+/*------------------------------FIN DES DECHETS----------------------------------*/
+/*-----------------------------------RESULTAT ELECTIONS-------------------------------------*/
+
+
 #resultatelection1 p,#resultatelection1 img{
 display: inline-block;
 vertical-align: top;
+
 }
 
 #resultatelection1 p{
 	width: 70%;
 	margin-left:1em; 
+
 }
 
 #resultatelection1 img{
 	width: 20%;
 	position: right;
+
 }
 #resultatelection1{
 	margin: 1em;
+
 }
-#resultatelection2 table
-{
+#resultatelection2 table{
     border-collapse: collapse;
     text-align: center;
     margin-left:auto;
 	margin-right: auto;
+
 }
 #resultatelection2 th,#resultatelection2 tr,#resultatelection2 td{
 	border: 1px solid black;
 	width: 10%;
 	height: 50px;
+
 }
 
 #resultatelection2 {
 	width: 100%;
 	text-align: center;
+
 }
 
 #resultatelection2 th{
 background-color: grey;
-}
-#resultatelection2 td{
-background-color: lightgrey;
+
 }
 
-/*-----------------------FIN RESULTAT ELECTIONS-----------------*/
+#resultatelection2 td{
+background-color: lightgrey;
+
+}
+
+/*------------------------------FIN DES RESULTAT ELECTIONS----------------------------------*/
+/*-----------------------------------ETAT CIVIL-------------------------------------*/
+
+#demarches li {
+	list-style-type: none;
+}
+#demarches li:before{
+	content: "→ ";
+
+}
+
+/*------------------------------FIN DE L'ETAT CIVIL----------------------------------*/
+/*-----------------------------------LISTES ELECTORALES-------------------------------------*/
+
+
+#listeselectorales h3:before {
+	content: "→ ";
+
+}
+
+#listeselectorales ul {
+	margin: 1em;
+}
+
+
+/*------------------------------FIN DES LISTES ELECTORALES----------------------------------*/
+/*-----------------------------------ANNUAIRE-------------------------------------*/
+
+
+#annuaire table
+{
+    border-collapse: collapse;
+    text-align: center;
+/*    margin-left:auto;
+	margin-right: auto;*/
+	width: 100%;
+}
+#annuaire th,#annuaire tr,#annuaire td{
+	border: 1px solid black;
+	width: 30%;
+	height: 50px;
+}
+
+#annuaire {
+	width: 100%;
+	text-align: center;
+	
+}
+
+#annuaire th{
+
+ background-color: grey;
+
+}
+
+#annuaire td,#annuaire tr{
+	background-color:lightgrey; 
+}
+
+#utile {
+
+	width: auto;
+	margin-bottom: 2em;
+}
+ 
+
+#utile img{
+	width: 75%;
+		padding-bottom: 5px;
+
+}
+/*------------------------------FIN ANNUAIRE---------------------------------*/
+/*-----------------------------------VILLAGE EN PHOTO-------------------------------------*/
+
+
+.voile{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.7;
+	display: none;
+}
+.lightbox{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 640px;
+	height: 427px;
+	border: 20px solid black;
+	margin-left: -340px;
+	margin-top: -233px;
+	background-color: white;
+	display: none;
+}
+.fleche{
+	position: absolute;
+	color: white;
+	font-family: Arial black;
+	font-size: 80px;
+	display: none;
+	align-self: center;
+}
+.ancreFleche{
+	width: 140px;
+	height: 387px;
+	padding: 20px;
+	position: absolute;
+	display: inline-flex;
+	cursor: pointer;
+}
+.ancreFleche:hover .fleche{
+	display: block;
+}
+.droite{
+	right: 40px;
+}
+.ancredroite{
+	right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+html {
+  height: 100%;
+}
+
+
+a:visited {
+
+	color: blue;
+
+}
+
+
+*{
+	font-style:normal;
+	font-weight: normal;
+	font-family: didot;
+}
+
+
+ body #content {
+	margin:  2em;	
+	border: solid lightgrey;
+	padding: 0em 1em 1em 1em;
+}
+
+ body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	padding-bottom: 100px;
+	min-height: 100%;
+}
+
 /*-----------------------ANNUAIRE-----------------
 
 #annuaire table
@@ -409,146 +709,7 @@ background-color: lightgrey;
 
 }
 /*-----------------------FIN ANNUAIRE-----------------*/
-/*-----------------------CA2BM-----------------*
 
-#logoca2bm{
-width:auto ;
-text-align: center;
-}
-
-#coordonneesca2bm p, #coordonneesca2bm img{
- 	padding-left:1em;
-}
-#carteca2bm{
-	width: 25%;
-
-}
-#carteca2bm, #communes{
-	display: inline-block;
-	vertical-align: top;
-
-}
-#communes{
-	width: 70%;
-}
-
-#com1 , #com2 ,#com3{
-	display: inline-block;
-	width: 30%;
-	vertical-align: top;
-	padding-left :10px; 
-}
-
-#com2, #com3 {
-	border-left: lightgrey solid 2px;
-
-}
-#competences li{
-
-	list-style-type: none;
-
-}
-#competences li:before{
-
-	content: "→ ";
-
-}
-
-#coordonneesca2bm , iframe {
-
-	display: inline-block;
-	vertical-align: top;
-}
-/*----------------------FIN CA2BM---------------------------*/
-
-/*----------------------DECHETTERIE---------------------------*
-#dechetterie #lieu, #dechetterie #un,  #dechetterie #deux  {
-
-	display: inline-block;
-}
-
-#dechetterie #un, #dechetterie #deux {
-
-	display: inline-block;
-	margin: 1em;
-	padding-left: 1em;
-	text-align: center;
-}
- #un , #deux , #fermeture {
-
-	text-align: center;
-	/*width: 100%;*
-
-} 
-#dechetterie #heures{
-	text-align: center;
-}
-#dechetterie h3{
-	padding-left:1em; 
-	margin: 0px;
-}
-
-#dechetterie #deux {
-
-	border-left: solid lightgrey ;
-
-}
-
-#dechetterie #adresse {
-	text-align: left;
-}
-
-#dechetterie #lieu{
-
-	vertical-align: top;
-}
-
-#dechetterie img{
-	vertical-align: top;
-
-
-}
-
-#dechetterie h3{
-	padding-left: 8em;
-}
-
-#dechetterie2 {
-	text-align: center;
-}
-#dechetterie #attention h3{
-
-	padding-left:0em; 
-	margin: 0px;
-
-}
-
-
-
-/*----------------------FIN DECHETTERIE---------------------------*/
-/*--------------------RAMASSAGEDECHET---------------*
-#ramassagedechet li{
-	list-style-type: none;
-}
-
-
-#ramassagedechet li:before{
-
-	content: "→ ";
-
-}
-
-
-/*------------------------ETATCIVIL--------------------------*
-
-#demarches li {
-	list-style-type: none;
-}
-#demarches li:before{
-
-	content: "→ ";
-
-}
 
 /*-----------------------ASSOCIATIONS---------------------*
 #assos #usfrencq , #assos #troisiemeage {
@@ -561,15 +722,7 @@ text-align: center;
 #assos #usfrencq h2, #assos #troisiemeage h2 {
 	margin-top: 0em;
 }
-/*----------TOURISME-------------------*
-#tourisme li {
-	list-style-type: none;
-}
-#tourisme li:before{
 
-	content: "→ ";
-
-}
 /*-----LISTES ELECTORALES -----*
 
 

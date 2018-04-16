@@ -1,82 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--<link rel="icon" sizes="152x152" href="images/icon.png">-->
 	<meta charset="utf-8">
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"> -->
 	<title>Mairie de Frencq</title>
-</head>
+	</head>
 
-<!-- HEADER -->
-<body>
-	<header>
+<div id="conteneurnav">
+	<nav>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="villageenphoto.html">Le village en photo</a></li>
+				<li><a href="#">Vie municipale</a>
+					<ul>
+						<li><a href="elus.html">Elus municipaux</a></li>
+						<li><a href="resultatelection.html">Résultats des élections</a></li>
+						<li><a href="etatcivil.html">Etat civil</a></li>
+						<li><a href="ca2bm.html">La C.A. des Deux Baies en Montreuillois (CA2BM)</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Vivre à Frencq</a>
+					<ul>
+						<li><a href="commerces.html">Les commerces</a></li>
+						<li><a href="ecole.html">Les écoles</a></li>
+						<li><a href="cantine.html">La cantine</a></li>
+						<li><a href="garderie.html">La garderie</a></li>
+						<li><a href="rpi.html">Le RPI</a></li>
+						<li><a href="associations.html">Les associations</a></li>	
+					</ul>
+				</li>
+				<li><a href="realisation.html">Réalisations</a></li>
+				<li><a href="#">Informations pratiques</a>
+					<ul>
+						<li><a href="demarches.html">Démarches administratives</a></li>
+						<li><a href="recensement.html">Le recensement (-16ans)</a></li>
+						<li><a href="dechets.html">Collecte des déchets</a></li>
+						<li><a href="infodiverses.html">Informations diverses</a></li>
+						<li><a href="listeselectorales.html">S'inscrire aux listes électorales</a></li>
+						<!--<li><a href="tourisme.html">Tourisme</a></li>-->
+						<li><a href="annuaire.html">Annuaire</a></li>	
+					</ul>
+				</li>
+			</ul>
+	</nav>
 
-		<div id="banniere">
-			<img src="images/mairie_banniere_2.jpg" alt="	Banniere mairie de Frencq">
-		</div>
-	</header>
 
+</div>
 
-
-
-<!-- FIN DU HEADER -->
-<!-- MENU -->
-<nav>
-	<div id="menu">
-		<ul>
-			<li><a href="index.html">Accueil</a></li>
-			<li><a href="villageenphoto.html">Le village en photo</a></li>
-			<li><a href="#">Vie municipale</a>
-				<ul>
-					<li><a href="elus.html">Elus municipaux</a></li>
-					<li><a href="resultatelection.html">Résultats des élections</a></li>
-					<li><a href="etatcivil.html">Etat civil</a></li>
-					<li><a href="ca2bm.html">La C.A. des Deux Baies en Montreuillois (CA2BM)</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Vivre à Frencq</a>
-				<ul>
-					<li><a href="commerces.html">Les commerces</a></li>
-					<li><a href="ecole.html">Les écoles</a></li>
-					<li><a href="cantine.html">La cantine</a></li>
-					<li><a href="garderie.html">La garderie</a></li>
-					<li><a href="rpi.html">Le RPI</a></li>
-					<li><a href="associations.html">Les associations</a></li>	
-				</ul>
-			</li>
-			<li><a href="realisation.html">Réalisations</a></li>
-			<li><a href="#">Informations pratiques</a>
-				<ul>
-					<li><a href="demarches.html">Démarches administratives</a></li>
-					<li><a href="recensement.html">Le recensement (-16ans)</a></li>
-					<li><a href="dechets.html">Collecte des déchets</a></li>
-					<li><a href="infodiverses.html">Informations diverses</a></li>
-					<li><a href="listeselectorales.html">S'inscrire aux listes électorales</a></li>
-					<li><a href="tourisme.html">Tourisme</a></li>
-					<li><a href="annuaire.html">Annuaire</a></li>	
-				</ul>
-			</li>
-		</ul>
+<div id="conteneurvide">
+	<!-- Conteuneur vide pour laisse un trou afin de montrer l'image de la mairie-->
 	</div>
-</nav>
-<!-- FIN DU MENU -->
 
-<div id="content">
-
-	<div id="elus">
-
-
+	<div id="conteneur">
+		
 
 		<h1>Nos élus municipaux</h1>
 
-		<div>
+		<div id="élus">
 
 			<div class="container">
 				<img src="images/avatarh.jpg" alt="Avatar" class="image">
 				<div class="overlay">
 					<div class="text">
-						<h1>M Norbert</h1><h1>MAGNIER</h1>
+						<h3>M Norbert</h3><h3>MAGNIER</h3>
 						<p>Maire</p>
 					</div>
 				</div>
@@ -86,7 +74,7 @@
 				<img src="images/avatarh.jpg" alt="Avatar" class="image">
 				<div class="overlay">
 					<div class="text">
-						<h1>M. Jean-Claude</h1><h1>POURTAU</h1>
+						<h3>M. Jean-Claude</h3><h3>POURTAU</h3>
 						<p>Premier adjoint</p>
 					</div>
 				</div>
@@ -96,7 +84,7 @@
 				<img src="images/avatarh.jpg" alt="Avatar" class="image">
 				<div class="overlay">
 					<div class="text">
-						<h1>M. René</h1><h1>GAMBART</h1>
+						<h3>M. René</h3><h3>GAMBART</h3>
 						<p>Deuxieme adjoint</p>
 					</div>
 				</div>
@@ -106,7 +94,7 @@
 				<img src="images/avatar.jpg" alt="Avatar" class="image">
 				<div class="overlay">
 					<div class="text">
-						<h1>Mme Annick</h1><h1>FLAHAUT</h1>
+						<h3>Mme Annick</h3><h3>FLAHAUT</h3>
 						<p>Troisième adjointe</p>
 					</div>
 				</div>
@@ -116,19 +104,19 @@
 				<img src="images/avatarh.jpg" alt="Avatar" class="image">
 				<div class="overlay">
 					<div class="text">
-						<h1>M. Daniel</h1><h1>MANIER</h1>
+						<h3>M. Daniel</h3><h3>MANIER</h3>
 						<p>Quatrième adjoint</p>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<div>
+
+
 			<div class="container">
 				<img src="images/avatarh.jpg" alt="Avatar" class="image">
 				<div class="overlay">
 					<div class="text">
-						<h1>M. Thierry</h1><h1>LOCQUEVILLE</h1>
+						<h3>M. Thierry</h3><h3>LOCQUEVILLE</h3>
 						<p>Conseiller municipal</p>
 					</div>
 				</div>
@@ -138,79 +126,7 @@
 				<img src="images/avatarh.jpg" alt="Avatar" class="image">
 				<div class="overlay">
 					<div class="text">
-						<h1>M. Steve</h1><h1>BOURGAIN</h1>
-						<p>Conseiller municipal</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<img src="images/avatar.jpg" alt="Avatar" class="image">
-				<div class="overlay">
-					<div class="text">
-						<h1>Mme Nathalie</h1><h1>MARTEL</h1>
-						<p>Conseillère municipal</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<img src="images/avatar.jpg" alt="Avatar" class="image">
-				<div class="overlay">
-					<div class="text">
-						<h1>Mme Jacqueline</h1><h1>HAUDIQUET</h1>
-						<p>Conseillère municipal</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<img src="images/avatar.jpg" alt="Avatar" class="image">
-				<div class="overlay">
-					<div class="text">
-						<h1>Mme Marie-Paule</h1><h1>HOSPITAL</h1>
-						<p>Conseillère municipal</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div>
-
-			<div class="container">
-				<img src="images/avatarh.jpg" alt="Avatar" class="image">
-				<div class="overlay">
-					<div class="text">
-						<h1>M. Jean</h1><h1>LEROY</h1>
-						<p>Conseiller municipal</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<img src="images/avatarh.jpg" alt="Avatar" class="image">
-				<div class="overlay">
-					<div class="text">
-						<h1>M. Steve</h1><h1>FRANÇOIS</h1>
-						<p>Conseiller municipal</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<img src="images/avatarh.jpg" alt="Avatar" class="image">
-				<div class="overlay">
-					<div class="text">
-						<h1>M. Olivier</h1><h1>MERLOT</h1>
-						<p>Conseiller municipal</p>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<img src="images/avatarh.jpg" alt="Avatar" class="image">
-				<div class="overlay">
-					<div class="text">
-						<h1>M. Eric</h1><h1>FOURNIER</h1>
+						<h3>M. Steve</h3><h3>BOURGAIN</h3>
 						<p>Conseiller municipal</p>
 					</div>
 				</div>
@@ -220,21 +136,95 @@
 				<img src="images/avatar.jpg" alt="Avatar" class="image">
 				<div class="overlay">
 					<div class="text">
-						<h1>Mme Stéphanie</h1><h1>LAMOUR</h1>
+						<h3>Mme Nathalie</h3><h3>MARTEL</h3>
 						<p>Conseillère municipal</p>
 					</div>
 				</div>
 			</div>
+
+			<div class="container">
+				<img src="images/avatar.jpg" alt="Avatar" class="image">
+				<div class="overlay">
+					<div class="text">
+						<h3>Mme Jacqueline</h3><h3>HAUDIQUET</h3>
+						<p>Conseillère municipal</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<img src="images/avatar.jpg" alt="Avatar" class="image">
+				<div class="overlay">
+					<div class="text">
+						<h3>Mme Marie-Paule</h3><h3>HOSPITAL</h3>
+						<p>Conseillère municipal</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="container">
+				<img src="images/avatarh.jpg" alt="Avatar" class="image">
+				<div class="overlay">
+					<div class="text">
+						<h3>M. Jean</h3><h3>LEROY</h3>
+						<p>Conseiller municipal</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<img src="images/avatarh.jpg" alt="Avatar" class="image">
+				<div class="overlay">
+					<div class="text">
+						<h3>M. Steve</h3><h3>FRANÇOIS</h3>
+						<p>Conseiller municipal</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<img src="images/avatarh.jpg" alt="Avatar" class="image">
+				<div class="overlay">
+					<div class="text">
+						<h3>M. Olivier</h3><h3>MERLOT</h3>
+						<p>Conseiller municipal</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<img src="images/avatarh.jpg" alt="Avatar" class="image">
+				<div class="overlay">
+					<div class="text">
+						<h3>M. Eric</h3><h3>FOURNIER</h3>
+						<p>Conseiller municipal</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<img src="images/avatar.jpg" alt="Avatar" class="image">
+				<div class="overlay">
+					<div class="text">
+						<h3>Mme Stéphanie</h3><h3>LAMOUR</h3>
+						<p>Conseillère municipal</p>
+					</div>
+				</div>
 		</div>	
 	</div>
-</div>
+			</div>
 
 
-<!-- FOOTER -->
+	</div>
 
-<footer>
-	<div id ="footer">
-		<div id="ouverture">
+	<div id="conteneurvidebas">
+	<!-- Conteuneur vide pour laisse un trou afin de montrer l'image de la mairie-->
+	</div>
+
+	<div id="conteneurfooter">
+		<footer>
+			<div id="ouverture">
 			<h2>Mairie de Frencq</h2>
 			<p>Lundi, Mardi, Jeudi, Vendredi</p>
 			<p>15h-18h</p>
@@ -250,7 +240,11 @@
 			<p>Copyright, tous droits réservés</p>
 		</div>
 	</div>
-</footer>
 
-</body>
+		</footer>
+	</div>
+
+
+
+	</body>
 </html>
