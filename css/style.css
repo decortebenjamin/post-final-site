@@ -665,6 +665,7 @@ background-color: lightgrey;
 }
 #boutons input {
 	width: 100%;
+	height: 30px;
 }
 
 #demarches {
@@ -680,114 +681,31 @@ background-color: lightgrey;
 }
 
 /*------------------------------FIN DEMARCHES---------------------------------*/
-/*-----------------------------------DEMARCHES-------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-html {
-  height: 100%;
-}
-
-
-a:visited {
-
-	color: blue;
-
-}
-
-
-*{
-	font-style:normal;
-	font-weight: normal;
-	font-family: didot;
-}
-
-
- body #content {
-	margin:  2em;	
-	border: solid lightgrey;
-	padding: 0em 1em 1em 1em;
-}
-
- body {
-	margin: 0;
-	padding: 0;
-	position: relative;
-	padding-bottom: 100px;
-	min-height: 100%;
-}
-
-/*-----------------------ANNUAIRE-----------------
-
-#annuaire table
-{
-    border-collapse: collapse;
-    text-align: center;
-/*    margin-left:auto;
-	margin-right: auto;
-	width: 100%;
-}
-#annuaire th,#annuaire tr,#annuaire td{
-	border: 1px solid black;
-	width: 30%;
-	height: 50px;
-}
-
-#annuaire {
-	width: 100%;
+/*------------------------------RPI---------------------------------*/
+#widehem, #halinghen{
 	text-align: center;
-	
+	width: 49%;
+	display: inline-block;
+	vertical-align: top;
 }
 
-#annuaire th{
-
- background-color: grey;
-
-}
-
-#annuaire td,#annuaire tr{
-	background-color:lightgrey; 
-}
-
-#utile {
-
-	width: auto;
-	margin-bottom: 2em;
-}
- 
-
-#utile img{
-	width: 75%;
-		padding-bottom: 5px;
+#widehem img, #halinghen img, #leturne img, #frencqmairie img, #frencqcp img{
+max-height:250px; 
 
 }
-/*-----------------------FIN ANNUAIRE-----------------*/
+#leturne, #frencqmairie, #frencqcp{
+	text-align: center;
+	width: 32%;
+	display: inline-block;
+	vertical-align: middle;	
+}
 
 
-/*-----------------------ASSOCIATIONS---------------------*
+/*-----------------------------------FIN RPI-------------------------------------*/
+/*-----------------------------------ASSOCIATIONS-------------------------------------*/
 #assos #usfrencq , #assos #troisiemeage {
 
-	border: solid lightgrey;
+	border: solid grey;
 	margin-top: 1em;
 	padding: 1em;
 }
@@ -796,25 +714,11 @@ a:visited {
 	margin-top: 0em;
 }
 
-/*-----LISTES ELECTORALES -----*
-
-
-#listeselectorales h3:before {
-
-	content: "→ ";
-
+#assos table {
+	background-color: yellow;
+	width: 100%;
+	text-align: center;
+	border: solid 1px black;
 }
-
-#listeselectorales ul {
-	margin: 1em;
-}
-
-
-
-
-
-
-
-
 
 
