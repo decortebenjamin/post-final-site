@@ -29,6 +29,7 @@ body{
 	margin-left: auto;
  	margin-right: auto;
 
+
 }
 
 #conteneurvide{
@@ -36,7 +37,6 @@ body{
 }
 
 #conteneur{
-
 	border:solid grey;
 	border-style: outset;
 	width: 88%;
@@ -50,7 +50,7 @@ body{
 
 }
 #conteneur a:visited{
-color:blue;
+	color:blue;
 
 }
 
@@ -64,7 +64,7 @@ color:blue;
 	border-style: outset;
 	border-bottom: none;
 	width: 90%;
-	height: 100px;
+	height: auto;
 	margin-left: auto;
  	margin-right: auto;
 
@@ -240,6 +240,11 @@ text-align: center;
 	vertical-align: top;
 }
 
+#communesmobile, #competencesmobile {
+
+	display: none;
+}
+
 /*------------------------------FIN DE LA CA2BM----------------------------------*/
 /*-----------------------------------INDEX-------------------------------------*/
 
@@ -282,7 +287,7 @@ text-align: center;
  	width: 70%;
  }
 
- #mairie #coordonnees , iframe{
+ #mairie #coordonnees ,#mairie iframe{
 display: inline-block;
  }
 
@@ -351,10 +356,11 @@ display: inline-block;
 width:100%;
 padding-bottom:10px;
 text-align: center;
-  	margin-left: auto;
- 	margin-right: auto;
+margin-left: auto;
+margin-right: auto;
 
 }
+
 #elus img{
 width: 100%;
 }
@@ -466,6 +472,7 @@ vertical-align: top;
     margin-left:auto;
 	margin-right: auto;
 
+	overflow: auto;
 }
 #resultatelection2 th,#resultatelection2 tr,#resultatelection2 td{
 	border: 1px solid black;
@@ -488,6 +495,10 @@ background-color: grey;
 #resultatelection2 td{
 background-color: lightgrey;
 
+}
+
+#resultatelectionmobile{
+	display: none;
 }
 
 /*------------------------------FIN DES RESULTAT ELECTIONS----------------------------------*/
@@ -558,7 +569,7 @@ background-color: lightgrey;
 
 #utile img{
 	width: 75%;
-		padding-bottom: 5px;
+	padding-bottom: 5px;
 
 }
 /*------------------------------FIN ANNUAIRE---------------------------------*/
@@ -612,9 +623,13 @@ background-color: lightgrey;
 .ancredroite{
 	right: 0px;
 }
-
-
-
+/*
+#photos a{
+	margin-left:auto;
+	margin-right: auto;
+	text-align: center;
+}
+*/
 /*------------------------------FIN VILLAGE EN PHOTO---------------------------------*/
 /*-----------------------------------DEMARCHES-------------------------------------*/
 
@@ -632,31 +647,12 @@ background-color: lightgrey;
 	list-style-type: none;
 
 }
+#famille, #sante, #travail, #papiers, #logement{
 
-#famille h2:before{
-	content: "→ ";
-
+	border:solid 2px grey;
+	margin-bottom: 1em;
 }
 
-#sante h2:before {
-	content: "→ ";
-
-}
-
-#travail h2:before {
-	content: "→ ";
-
-}
-
-#papiers h2:before {
-	content: "→ ";
-
-}
-
-#logement h2:before {
-	content: "→ ";
-
-}
 
 #boutons {
 	vertical-align: top;
@@ -671,7 +667,7 @@ background-color: lightgrey;
 #demarches {
 	width: 75%;
 	margin-left: 3em;
-	height: 500px;
+	min-height: 650px;
 
 }
 
@@ -721,4 +717,383 @@ max-height:250px;
 	border: solid 1px black;
 }
 
+#commerces, #artisants{
+	display: inline-block;
+	width: 40%;
+	min-height: 400px;
+	vertical-align: top;
+	padding: 2em;
+	padding-top: 0em;
+}
 
+#commerces{
+	border-right: solid grey 2px;
+}
+
+.commerçant{
+
+	width: 100%;
+	border-bottom: solid grey 1px;
+}
+
+.avant, .apres {
+	display: inline-block;
+	width: 49.5%;
+	text-align: center;
+}
+
+.avant img, .apres img{
+width: 80%;
+
+}
+
+
+
+
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+@media(-webkit-min-device-pixel-ratio:2 ){
+} 
+ /*****Medias queries max w640******/
+@media only screen and (max-device-width : 640px){
+
+	/* Talle du conteneur */
+
+	#conteneurvide {
+		height: 100px;
+	
+	}
+
+	body {
+		background-image: url(../images/mairiemediasqueries.jpg) ;
+		background-size:100%;
+		background-repeat: repeat;
+	    background-attachment: fixed;
+	    background-position: center top; 
+
+	}
+
+	footer #ouverture , footer #contact , footer #copyright{
+	width: 100%;
+
+	}
+
+	/*------------------menu ---------------------*/
+	nav ul {
+	 display:block;
+	 text-align: center;
+	 margin: 0;
+	 padding: 0;	
+
+	}
+
+	nav ul li {
+	 display: block;
+	 width: 100%;
+	}
+
+	nav ul li a {
+	 display:block;
+	 width:auto;
+	 text-align: center;
+	}
+
+	nav ul li a:hover {
+	 color:white;
+	 background-color: #666666;
+
+	}
+
+	nav ul li:hover ul {
+	 display:block;
+	 margin-left: 0px;
+	 width:90%;
+
+	}
+
+	#sousmenu:before{
+			
+			content: "↓ ";
+	}
+	#sousmenu:after{
+
+			content: " ↓";
+	}
+
+	/*------------------FIN MENU ---------------------*/
+	/*------------------INDEX ---------------------*/
+	#photomrmaire {
+		display: none;
+	}
+
+	#motdumaire , #avenir{
+		width: auto;
+	}
+
+	#accueilgauche, #mairie iframe {
+		width: 100%;
+	}
+
+	#mairie #coordonnees {
+	 	width: 100%;
+	 	padding-bottom: 1em;
+	 }
+	#mairie {
+	 	padding-top:0em;
+	 }
+
+	/*------------------FIN MENU ---------------------*/
+	/*------------------ELUS ---------------------*/
+
+	.container {
+	  width: 25%;
+	}
+
+	/*------------------FIN ELUS ---------------------*/
+	/*------------------RESULTAT ELECTIONS ---------------------*/
+	#resultatelection2 table{
+		display: none;
+	}
+
+	#resultatelection1 img{
+		width: 100%;
+
+	}
+	#resultatelection1 p{
+		width: 100%;
+		margin-left:0em; 
+
+	}
+
+	#resultatelectionmobile{
+		display: block;
+	}
+
+
+	/*------------------FIN INDEX ---------------------*/
+	/*------------------CA2BM---------------------*/
+
+	#com1 , #com2 , #com3 , #competences{
+
+		display: none;
+	}
+
+	#communesmobile, #competencesmobile {
+		display: block;
+	}
+
+	#carteca2bm{
+		width: auto;
+
+	}
+
+
+	#coordomap {
+		width: auto;
+	}
+	#coordomap iframe{
+		width: 100%;
+	}
+
+	/*------------------FIN CA2BM ---------------------*/
+	/*------------------DEMARCHES---------------------*/
+	
+	#boutons{
+		width: 100%;
+		display: block;
+	}
+
+	#famille , #sante , #travail , #papiers , #logement {
+		width: 100%; 
+
+	}
+
+	#demarches {
+		width: 100%;
+		margin-left: 0em;
+	}
+
+
+	#famille h3:before, #sante h3:before , #travail h3:before , #papiers h3:before , #logement h3:before  {
+		content: "→ ";
+
+	}
+
+	#famille h2:before , #sante h2:before, #travail h2:before, #papiers h2:before, #papiers h2:before, #logement h2:before {
+		content: none;
+
+	}
+
+
+	/*------------------FIN DEMARCHES ---------------------*/
+	/*-----------------------------------DECHETS-------------------------------------*/
+
+
+
+	#dechetterie h3{
+		padding-left:0em; 
+		margin: 0px;
+	}
+
+	#dechetterie21 img{
+
+		width: 100%; 	
+	}
+	#dechetterie h3{
+		padding-left: 0em;
+	}
+
+	#dechetterie2 iframe{
+		width: 100%;
+	}
+	#dechetterie #attention h3{
+		padding-left:0em; 
+		margin: 0px;
+
+	}
+
+	#ramassagedechet li{
+		list-style-type: none;
+
+	}
+
+
+	#ramassagedechet li:before{
+		content: "→ ";
+
+	}
+
+	/*------------------------------FIN DES DECHETS----------------------------------*/
+	/*------------------------------ANNUAIRE----------------------------------*/
+
+	#annuaire #tableau {
+		overflow: scroll;
+		
+	}
+
+	/*------------------------------FIN DE L'ANNUAIRE----------------------------------*/
+
+		
+		
+}
+
+ /*****IPAD******/
+@media only screen and (min-device-width : 645px) and (max-device-width : 1024px){
+
+
+	#conteneurvide {
+		height: 150px;
+	
+	}
+
+	body {
+		background-image: url(../images/mairiemediasqueries.jpg) ;
+		background-size:100%;
+		background-repeat: repeat;
+	    background-attachment: fixed;
+	    background-position: center top; 
+
+	}
+
+	footer #ouverture , footer #contact , footer #copyright{
+	width: 100%;
+
+	}
+
+	/*-------------------------INDEX--------------------------*/
+
+	#accueilgauche{
+		width: 100%;
+	}
+
+	#motdumaire{
+		width: 70%;
+	}
+
+	#photomrmaire{
+		width: 20%;
+	}
+
+	#photomrmaire , #motdumaire {
+		display: inline-block;
+		
+	}
+
+	#motdumaire h2 {
+		margin-top: 0px;
+	}
+
+	#avenir{
+		width: auto;
+	}
+
+	#coordoonees{
+		overflow-wrap: break-word;
+	}
+
+	#mairie #coordoonnees{
+		width: 33%
+	}
+
+	#mairie iframe {
+		width: 66%;
+		height: 350px;
+	}
+
+	#carteca2bm{
+		display: none;
+	}
+
+	#communes {
+		width: 100%;
+	}
+
+	#coordomap iframe{
+		width: 100%;
+	}
+
+
+
+	#boutons{
+		width: 40%;
+		display: block;
+	}
+
+	#famille , #sante , #travail , #papiers , #logement {
+		width: 100%; 
+
+	}
+
+	#demarches {
+		width: 50%;
+		margin-left: 0em;
+	}
+
+
+	#famille h3:before, #sante h3:before , #travail h3:before , #papiers h3:before , #logement h3:before  {
+		content: "→ ";
+
+	}
+
+	#famille h2:before , #sante h2:before, #travail h2:before, #papiers h2:before, #papiers h2:before, #logement h2:before {
+		content: none;
+
+	}
+
+	#boutons , #demarches {
+		display: inline-block;
+	}
+
+
+
+}

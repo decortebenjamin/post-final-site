@@ -2,10 +2,17 @@
 <html>
 	<head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!--<link rel="icon" sizes="152x152" href="images/icon.png">-->
+	<!-- CODE POUR METTRE LES FAVICONS -->
+	<link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+	<link rel="manifest" href="images/icon/site.webmanifest">
+	<link rel="mask-icon" href="images/icon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 	<meta charset="utf-8">
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"> -->
-	<title>Mairie de Frencq</title>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+	<title>Mairie de Frencq | Les résultats des dernières élections</title>
 	</head>
 
 <div id="conteneurnav">
@@ -13,7 +20,7 @@
 			<ul>
 				<li><a href="index.html">Accueil</a></li>
 				<li><a href="villageenphoto.html">Le village en photo</a></li>
-				<li><a href="#">Vie municipale</a>
+				<li><a href="#" id="sousmenu">Vie municipale</a>
 					<ul>
 						<li><a href="elus.html">Elus municipaux</a></li>
 						<li><a href="resultatelection.html">Résultats des élections</a></li>
@@ -21,10 +28,10 @@
 						<li><a href="ca2bm.html">La C.A. des Deux Baies en Montreuillois (CA2BM)</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Vivre à Frencq</a>
+				<li><a href="#" id="sousmenu">Vivre à Frencq</a>
 					<ul>
-						<li><a href="commerces.html">Les commerces</a></li>
-						<li><a href="ecole.html">Les écoles | La cantine  La garderie</a></li>
+						<li><a href="commerces.html">Les commerces et artisants</a></li>
+						<li><a href="ecole.html">Les écoles | La cantine | La garderie</a></li>
 				<!--	<li><a href="cantine.html">La cantine</a></li>
 						<li><a href="garderie.html">La garderie</a></li>-->
 						<li><a href="rpi.html">Le RPI</a></li>
@@ -32,7 +39,7 @@
 					</ul>
 				</li>
 				<li><a href="realisation.html">Réalisations</a></li>
-				<li><a href="#">Informations pratiques</a>
+				<li><a href="#" id="sousmenu">Informations pratiques</a>
 					<ul>
 						<li><a href="demarches.html">Démarches administratives</a></li>
 						<li><a href="recensement.html">Le recensement (-16ans)</a></li>
@@ -46,7 +53,6 @@
 			</ul>
 	</nav>
 
-
 </div>
 
 <div id="conteneurvide">
@@ -59,7 +65,7 @@
 		<img src="images/elections.jpg" alt="carte electorale">
 
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id imperdiet ex. Vivamus vestibulum sodales augue. Fusce quis lacus sapien. Nunc in justo vestibulum, porta nibh sit amet, efficitur metus. Etiam semper volutpat sem, et elementum risus congue dapibus. Sed mollis magna at est placerat malesuada. Morbi laoreet odio a nisi imperdiet tristique.</p>
+		<p>Cette rubrique vous permettra de connaître les résultats des dernières élections ou consultations qui ont eu lieu. Vous obtiendrez également des renseignements concernant la validation et la diffusion de ces résultats. Par exemple, les résultats sont accessibles après validation du ministère de l'Intérieur, mais peuvent être modifiés par le Conseil constitutionnel.</p>
 	</div>
 	
 <div id="resultatelection2">	
@@ -87,7 +93,7 @@
 	   <!--  PRESIDENTIELLES 17 -->
 	   <tr>
 	       <td>Présidentielles</td>
-	       <td>7 mai 2017</td>
+	       <td>23 avril et 7 mai 2017</td>
 	       <td>M. Emmanuel MACRON</td>
 	       <td>60.21%</td>
 	       <td>66.10%<br>France</td>
@@ -115,6 +121,38 @@
 
 
 	</table>
+
+	<div id="resultatelectionmobile">
+		
+		<h2>Législatives :</h2>
+	       <p>11 et 18 juin 2017</p>
+	       <p>Elu : M. Daniel FASQUELLE</p>
+	       <p>Résultat communal : 56.07%</p>
+	       <p>Résultat de la 4ème circonscription : 52,19%</p>
+	       <a href="https://www.interieur.gouv.fr/Elections/Les-resultats/Legislatives/elecresult__legislatives-2017/(path)/legislatives-2017/062/06204.html" target="_blank">en savoir plus ..</a>
+
+	    <h2>Présidentielles :</h2>
+	       <p>23 avril et 7 mai 2017</p>
+	       <p>Elu : M. Emmanuel MACRON</p>
+	       <p>Résultat communal : 60.21%</p>
+	       <p>Résultat du pays : 66,10%</p>
+	      	<a href="https://www.interieur.gouv.fr/Elections/Les-resultats/Presidentielles/elecresult__presidentielle-2017/(path)/presidentielle-2017/FE.html" target="_blank">en savoir plus ..</a>
+
+	     <h2>Régionales :</h2>
+	       <p>6 et 13 décembre 2015</p>
+	       <p>Elu : M. Xavier BERTRAND</p>
+	       <p>Résultat communal : 61.13%</p>
+	       <p>Résultat de la région Hauts-de-France : 54,12%</p>
+	      	<a href="https://www.interieur.gouv.fr/Elections/Les-resultats/Regionales/elecresult__regionales-2015/(path)/regionales-2015/32/32.html" target="_blank">en savoir plus ..</a>
+
+	     <h2>Départementales (ex cantonales) :</h2>
+	       <p>22 et 29 mars 2015</p>
+	       <p>Elus : M. Phillipe FAIT et Mme Geneviève MARGUERITTE</p>
+	       <p>Résultat communal : 59.79%</p>
+	       <p>Résultat du canton d'Etaples : 62.47%</p>
+	      	<a href="https://www.interieur.gouv.fr/Elections/Les-resultats/Departementales/elecresult__departementales-2015/(path)/departementales-2015/062/06224.html" target="_blank">en savoir plus ..</a>
+
+	</div>
 
 
 

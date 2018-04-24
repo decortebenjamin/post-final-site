@@ -4,48 +4,57 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-	<!--<link rel="icon" sizes="152x152" href="images/icon.png">-->
 	<meta charset="utf-8">
-	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"> -->
-	<title>Mairie de Frencq</title>
+
+	<!-- CODE POUR METTRE LES FAVICONS -->
+	<link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+	<link rel="manifest" href="images/icon/site.webmanifest">
+	<link rel="mask-icon" href="images/icon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+	<title>Mairie de Frencq | Démarches administratives</title>
 </head>
 
 <div id="conteneurnav">
 	<nav>
-		<ul>
-			<li><a href="index.html">Accueil</a></li>
-			<li><a href="villageenphoto.html">Le village en photo</a></li>
-			<li><a href="#">Vie municipale</a>
-				<ul>
-					<li><a href="elus.html">Elus municipaux</a></li>
-					<li><a href="resultatelection.html">Résultats des élections</a></li>
-					<li><a href="etatcivil.html">Etat civil</a></li>
-					<li><a href="ca2bm.html">La C.A. des Deux Baies en Montreuillois (CA2BM)</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Vivre à Frencq</a>
-				<ul>
-						<li><a href="commerces.html">Les commerces</a></li>
-						<li><a href="ecole.html">Les écoles | La cantine  La garderie</a></li>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="villageenphoto.html">Le village en photo</a></li>
+				<li><a href="#" id="sousmenu">Vie municipale</a>
+					<ul>
+						<li><a href="elus.html">Elus municipaux</a></li>
+						<li><a href="resultatelection.html">Résultats des élections</a></li>
+						<li><a href="etatcivil.html">Etat civil</a></li>
+						<li><a href="ca2bm.html">La C.A. des Deux Baies en Montreuillois (CA2BM)</a></li>
+					</ul>
+				</li>
+				<li><a href="#" id="sousmenu">Vivre à Frencq</a>
+					<ul>
+						<li><a href="commerces.html">Les commerces et artisants</a></li>
+						<li><a href="ecole.html">Les écoles | La cantine | La garderie</a></li>
 				<!--	<li><a href="cantine.html">La cantine</a></li>
 						<li><a href="garderie.html">La garderie</a></li>-->
 						<li><a href="rpi.html">Le RPI</a></li>
 						<li><a href="associations.html">Les associations</a></li>	
 					</ul>
-			</li>
-			<li><a href="realisation.html">Réalisations</a></li>
-			<li><a href="#">Informations pratiques</a>
-				<ul>
-					<li><a href="demarches.html">Démarches administratives</a></li>
-					<li><a href="recensement.html">Le recensement (-16ans)</a></li>
-					<li><a href="dechets.html">Collecte des déchets</a></li>
-					<li><a href="infodiverses.html">Informations diverses</a></li>
-					<li><a href="listeselectorales.html">S'inscrire aux listes électorales</a></li>
-					<!--<li><a href="tourisme.html">Tourisme</a></li>-->
-					<li><a href="annuaire.html">Annuaire</a></li>	
-				</ul>
-			</li>
-		</ul>
+				</li>
+				<li><a href="realisation.html">Réalisations</a></li>
+				<li><a href="#" id="sousmenu">Informations pratiques</a>
+					<ul>
+						<li><a href="demarches.html">Démarches administratives</a></li>
+						<li><a href="recensement.html">Le recensement (-16ans)</a></li>
+						<li><a href="dechets.html">Collecte des déchets</a></li>
+						<li><a href="infodiverses.html">Informations diverses</a></li>
+						<li><a href="listeselectorales.html">S'inscrire aux listes électorales</a></li>
+						<!--<li><a href="tourisme.html">Tourisme</a></li>-->
+						<li><a href="annuaire.html">Annuaire</a></li>	
+					</ul>
+				</li>
+			</ul>
 	</nav>
 
 
@@ -79,10 +88,10 @@
 	<div id="demarches">
 		<div id="famille">
 
-			<h3>Les démarches pour la famille :</h3>
+			<h2>Les démarches pour la famille :</h2>
 			<ul> 
 				<li>
-					<h2>Prestations familiales</h2>
+					<h3>Prestations familiales</h3>
 					<p>Caisse nationale d’allocations familiales</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="https://www.caf.fr/" target="_blank">caf.fr</a>
@@ -90,14 +99,14 @@
 
 
 				<li>
-					<h2>Prestations sociales de la MSA</h2>
+					<h3>Prestations sociales de la MSA</h3>
 					<p>Caisse centrale de la MSA</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="http://www.msa.fr" target="_blank">msa.fr</a>
 				</li>
 
 				<li>
-					<h2>Calcul de la revalorisation des pensions alimentaires</h2>
+					<h3>Calcul de la revalorisation des pensions alimentaires</h3>
 					<p>service-public.fr / indices INSEE</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="http://www.service-public.fr" target="_blank">service-public.fr</a>
@@ -110,10 +119,10 @@
 		<!-- DEMARCHE SANTE-->	
 		<div id="sante">
 
-			<h3>Les démarches pour la santé :</h3>
+			<h2>Les démarches pour la santé :</h2>
 			<ul> 
 				<li>
-					<h2>Consultez vos remboursements d’assurance maladie</h2>
+					<h3>Consultez vos remboursements d’assurance maladie</h3>
 					<p>Régime général de l’Assurance maladie</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="http://www.ameli.fr/" target="_blank">ameli.fr</a>
@@ -121,14 +130,14 @@
 
 
 				<li>
-					<h2>Services en ligne de l’assurance maladie</h2>
+					<h3>Services en ligne de l’assurance maladie</h3>
 					<p>Régime général de l’Assurance maladie</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="http://www.ameli.fr/" target="_blank">ameli.fr</a>
 				</li>
 
 				<li>
-					<h2>Services en ligne de l’assurance maladie de la MSA</h2>
+					<h3>Services en ligne de l’assurance maladie de la MSA</h3>
 					<p>Caisse centrale de la MSA</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="http://www.msa.fr" target="_blank">www.msa.fr</a>
@@ -142,10 +151,10 @@
 
 		<div id="travail">
 
-			<h3>Les démarches pour le travail :</h3>
+			<h2>Les démarches pour le travail :</h2>
 			<ul> 
 				<li>
-					<h2>Espace Pole Emploi</h2>
+					<h3>Espace Pole Emploi</h3>
 					<p>Agence nationale pour l’emploi – Pole Emploi</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="http://www.pole-emploi.fr" target="_blank">pole-emploi.fr</a>
@@ -153,14 +162,14 @@
 
 
 				<li>
-					<h2>Concours et emplois dans la Fonction publique</h2>
+					<h3>Concours et emplois dans la Fonction publique</h3>
 					<p>Service-public.fr</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="http://www.service-public.fr/" target="_blank">service-public.fr</a>
 				</li>
 
 				<li>
-					<h2>Services en ligne de l’assurance retraite</h2>
+					<h3>Services en ligne de l’assurance retraite</h3>
 					<p>Caisse Nationale d’Assurance Vieillesse</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="https://www.lassuranceretraite.fr/portail-info/accueil" target="_blank">lassuranceretraite.fr</a>
@@ -168,7 +177,7 @@
 
 
 				<li>
-					<h2>Services en ligne de l’assurance retraite de la MSA</h2>
+					<h3>Services en ligne de l’assurance retraite de la MSA</h3>
 					<p>Caisse centrale de la MSA</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="http://www.msa.fr" target="_blank">msa.fr</a>
@@ -176,7 +185,7 @@
 
 
 				<li>
-					<h2>Simulez vos droits à la retraite</h2>
+					<h3>Simulez vos droits à la retraite</h3>
 					<p>GIP Info Retraite</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="http://www.marel.fr" target="_blank">marel.fr</a>
@@ -190,10 +199,10 @@
 
 		<div id="papiers">
 
-			<h3>Les démarches pour les papiers :</h3>
+			<h2>Les démarches pour les papiers :</h2>
 			<ul> 
 				<li>
-					<h2>Demande d’acte d’état civil en ligne</h2>
+					<h3>Demande d’acte d’état civil en ligne</h3>
 					<p>Direction générale de la modernisation de l’Etat (DGME)</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="https://www.acte-etat-civil.fr" target="_blank">acte-etat-civil.fr</a>
@@ -201,14 +210,14 @@
 
 
 				<li>
-					<h2>Certificat de situation administrative (non gage et non opposition)</h2>
+					<h3>Certificat de situation administrative (non gage et non opposition)</h3>
 					<p>Ministère de l’intérieur, de l’outre-mer et des collectivités territoriales</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="https://siv.interieur.gouv.fr/" target="_blank">siv.interieur.gouv.fr/</a>
 				</li>
 
 				<li>
-					<h2>Carte d’identité : suivez votre demande</h2>
+					<h3>Carte d’identité : suivez votre demande</h3>
 					<p>Ministère de l’intérieur, de l’outre-mer et des collectivités territoriales</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="http://vosdroits.service-public.fr/particuliers/R1580.xhtml" target="_blank">vosdroits.service-public.fr</a>
@@ -222,10 +231,10 @@
 
 		<div id="logement">
 
-			<h3>Les démarches pour le logement :</h3>
+			<h2>Les démarches pour le logement :</h2>
 			<ul> 
 				<li>
-					<h2>Changement d’adresse en ligne</h2>
+					<h3>Changement d’adresse en ligne</h3>
 					<p>Direction générale de la modernisation de l’Etat (DGME)</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="https://mdel.mon.service-public.fr/je-change-de-coordonnees.html" target="_blank">mdel.mon.service-public.fr</a>
@@ -233,21 +242,21 @@
 
 
 				<li>
-					<h2>Demande d’aides au logement</h2>
+					<h3>Demande d’aides au logement</h3>
 					<p>Caisse nationale d’allocations familiales</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="www.caf.fr" target="_blank">caf.fr</a>
 				</li>
 
 				<li>
-					<h2>Demande d’aide au logement MSA</h2>
+					<h3>Demande d’aide au logement MSA</h3>
 					<p>Caisse centrale de la MSA</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="http://www.msa.fr" target="_blank">msa.fr</a>
 				</li>
 
 				<li>
-					<h2>Cadastre en ligne</h2>
+					<h3>Cadastre en ligne</h3>
 					<p>Ministère du Budget, des comptes publics et de la fonction publique</p>
 					<img src="images/pc.png" width="20px" alt="Logo pc">
 					<a href ="http://www.cadastre.gouv.fr" target="_blank">cadastre.gouv.fr</a>
