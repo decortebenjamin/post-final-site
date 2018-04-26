@@ -89,7 +89,7 @@
 
  		var ancreflechegauche = "<a rel="+indexmoins+" class = 'ancreFleche'><span class = 'fleche'> &lsaquo; </span> </a>";
   		var ancreflechedroite = "<a rel="+indexplus+" class = 'ancreFleche ancredroite'><span class = 'fleche droite'> &rsaquo; </span> </a>";
-  		var monimage = "<img src="+$(maPhoto).attr('href')+">";
+  		var monimage = "<img src="+$(maPhoto).attr('href')+" class='photofiltre' >";
 
   		if (index == 0)
   		{
