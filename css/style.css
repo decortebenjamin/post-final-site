@@ -397,11 +397,6 @@ footer #ouverture h2{
 
 }
 
-#dechetterie #deux {
-	border-left: solid lightgrey ;
-
-}
-
 #dechetterie #adresse {
 	text-align: left;
 
@@ -428,6 +423,11 @@ footer #ouverture h2{
 #dechetterie #attention h3{
 	padding-left:0em; 
 	margin: 0px;
+
+}
+
+#dechetterie #lieu img{
+	width: 100%;
 
 }
 
@@ -1100,8 +1100,24 @@ footer #ouverture h2{
 
 	}
 
-}
+	.avant, .apres{
+		width: 100%;
 
+	}
+
+	.apres{
+		padding-top: 5px;
+
+	}
+}
+/*****IPAD******/
+/*****IPAD******/
+/*****IPAD******/
+/*****IPAD******/
+/*****IPAD******/
+/*****IPAD******/
+/*****IPAD******/
+/*****IPAD******/
  /*****IPAD******/
 @media only screen and (min-device-width : 645px) and (max-device-width : 1024px){
 
