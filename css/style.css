@@ -726,16 +726,25 @@ footer #ouverture h2{
 /*-----------------------------------FIN RPI-------------------------------------*/
 /*-----------------------------------ASSOCIATIONS-------------------------------------*/
 
-#assos table {
-	width: 100%;
-	text-align: center;
-	border: solid 1px black;
-	margin-bottom: 1em;
+#assos .contact{
+	width: 25%;
 
 }
 
-#assos td{
-	width: 33%;
+#assos .but{
+	width: 74%;
+	text-align: center;
+
+}
+
+#assos .contact, #assos .but{
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+#assos .associations{
+	border-bottom: 3px lightgrey solid
 
 }
 
@@ -1064,6 +1073,33 @@ footer #ouverture h2{
 		padding: 0;
 
 	}
+
+
+	/* --------------------ECOLE---------------*/
+	#leturne, #frencqmairie, #frencqcp{
+		width: 100%;
+		display: block;
+
+	}
+
+	/*------------------RPI---------------*/
+
+	#widehem, #halinghen{
+		width: 100%;
+		display: inline-block;
+
+	}
+	/*----------assoss----------*/
+	#assos .contact{
+		width: 100%;
+
+	}
+
+	#assos .but{
+		width: 100%;
+
+	}
+
 }
 
  /*****IPAD******/
