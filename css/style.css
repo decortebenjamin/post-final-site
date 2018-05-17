@@ -1,12 +1,16 @@
 
 body{
-	background-image: url(../images/mairiemediasqueries.jpg) ;
-	background-size:100%;
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position:bottom; 
     margin: 0;
     padding:0;
+
+}
+
+html { 
+  background: url(background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
 }
 
@@ -16,8 +20,6 @@ body{
 	font-family: Titillium , Arial , sans-serif ;
 
 }
-
-
 
 /*-----------------------CONTENEUR-BACKGROUNDS------------------------*/
 
@@ -30,18 +32,26 @@ body{
  	margin-right: auto;
  	font-size: 15px;
 
+}
+
+#conteneurimg{
+	height: 400px;
+	text-align: center;
 
 }
 
-#conteneurvide{
-	height: 300px;
+#conteneurimg img {
+	width: 90%;
+	margin-left: 0;
+ 	margin-right: 0	;
+ 	height:auto;
 }
 
 #conteneur{
 	border:solid grey;
 	border-style: outset;
 	width: 88%;
-	background-color: lightgrey;
+	background-color: #DDF1FF;
 	height: auto;
 	min-height: 400px;
 	margin-left: auto;
@@ -71,11 +81,11 @@ body{
 
 }
 
-/*------------------------------FIN DES BACKGROUNDS-----------------------------------*/
+/*------------------------------FIN DES CONTENEURS-----------------------------------*/
 /*-----------------------------------NAV-------------------------------------*/
 
 nav {
-	background-color: lightgrey;
+	background-color:#a1ceed;
 	width: auto;
 	z-index: 4;
 	text-align: center;
@@ -83,59 +93,57 @@ nav {
 }
 
 nav ul {
- list-style-type:none;
- display: inline-block;
- margin-left:-40px;
+	list-style-type:none;
+	display: inline-block;
+	margin-left:-40px;
 
 }
 
 nav ul li {
- display: inline-block;
- background-color:lightgrey;
+	display: inline-block;
+	background-color:#a1ceed;
 
 }
 
-
 nav ul li a {
-
- display:block;
- width:150px;
- color:black;
- text-decoration:none;
- padding: .55em;
- text-align: center;
+	display:block;
+	width:150px;
+	color:black;
+	text-decoration:none;
+	padding: .55em;
+	text-align: center;
 
 }
 
 nav ul li a:hover {
- color:white;
- background-color: #666666;
+ 	color:white;
+ 	background-color: #666666;
 
 }
 
  nav ul li ul {
- display:none;
-   z-index: 4;
+ 	display:none;
+   	z-index: 4;
 
 }
 
 nav ul li:hover ul {
- display:block;
- margin-left: -40px;
- width:12%;
+ 	display:block;
+ 	margin-left: -40px;
+ 	width:12%;
 
 }
 
 nav ul li ul {	
- position:absolute;
+ 	position:absolute;
 
 }
 
-
 /*------------------------------FIN DU NAV----------------------------------*/
 /*-----------------------------------FOOTER-------------------------------------*/
+
 footer{
-	background-color: lightgrey;
+	background-color: #A1ceed;
 	bottom: 0;
 	width: 100%;
 
@@ -163,13 +171,7 @@ footer #ouverture , #contact p{
 
 }
 
-footer #ouverture p{
-	margin-bottom:0px;
-	margin-top: 0px;
-
-}
-
-footer #contact p{
+footer #ouverture p , footer #contact p{
 	margin-bottom:0px;
 	margin-top: 0px;
 
@@ -185,8 +187,8 @@ footer #ouverture h2{
 /*-----------------------------------CA2BM-------------------------------------*/
 
 #logoca2bm{
-width:auto ;
-text-align: center;
+	width:auto ;
+	text-align: center;
 
 }
 
@@ -236,145 +238,135 @@ text-align: center;
 }
 
  #coordomap iframe , #coordomap #coordonneesca2bm{
-
 	display: inline-block;
 	vertical-align: top;
+
 }
 
 #communesmobile, #competencesmobile {
-
 	display: none;
+
 }
 
 /*------------------------------FIN DE LA CA2BM----------------------------------*/
 /*-----------------------------------INDEX-------------------------------------*/
 
-#photomrmaire{
-	width: 20%;
+#accueilgauche, #avenir{
+ 	display: inline-block;
 
 }
-#photomrmaire img{
-	width: 100%;
+
+#mairie #coordonnees {
+ 	width: 25%;
+ 	vertical-align: top;
 
 }
-#motdumaire{
-	padding: 1em;
-	width: 60%;
-	vertical-align: top;
+
+#mairie {
+ 	padding-top:3em;
+ 	width: 100%;
+
 }
 
-#photomrmaire, #motdumaire{
+#mairie iframe{
+ 	width: 70%;
+
+}
+
+#mairie #coordonnees ,#mairie iframe{
 	display: inline-block;
+}
+
+#accueilgauche{
+ 	width: 75%;
+
+}
+
+#mairie #coordonnees div p{
+ 	margin: 0;
+
 }
 
 #avenir{
 	margin-top: 1em;
 	padding: 1em;
-	width: 17%;
+	width: 20%;
 	border: solid;
 	vertical-align: top;
+	border-radius: 10px;
+
 }
- #accueilgauche, #avenir{
-
- 	display: inline-block;
- }
-
- #mairie #coordonnees {
- 	width: 29%;
- 	vertical-align: top;
- }
- #mairie {
- 	padding-top:3em;
-
- }
-
- #mairie iframe{
- 	width: 60%;
- }
-
- #mairie #coordonnees ,#mairie iframe{
-	display: inline-block;
- }
-
- #accueilgauche{
- 	width: 75%;
- }
-
- #accueilgauche, #avenir{
- 	display: inline-block;
- }
-
- #mairie #coordonnees div p{
- 	margin: 0;
-
- }
 
 /*------------------------------FIN DE L'INDEX----------------------------------*/
 /*-----------------------------------ELUS-------------------------------------*/
 
 .container {
-  position: relative;
-  width: 18%;
-  display:inline-block;
-  margin: 10px;
+ 	position: relative;
+ 	width: 18%;
+  	display:inline-block;
+  	margin: 10px;
 
 }
 
 .image {
-  display: block;
-  width: 100%;
-  height: auto;
+  	display: block;
+  	width: 100%;
+  	height: auto;
+
 }
 
 .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: grey;
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
+  	position: absolute;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	background-color: grey;
+  	overflow: hidden;
+  	width: 100%;
+  	height: 0;
+  	transition: .5s ease;
+
 }
 
 .container:hover .overlay {
-  height: 100%;
+	height: 100%;
 
 }
 
 .text {
-  white-space: nowrap; 
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  overflow: hidden;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-
-#elus{
-width:100%;
-padding-bottom:10px;
-text-align: center;
-margin-left: auto;
-margin-right: auto;
+  	white-space: nowrap; 
+  	color: white;
+  	font-size: 20px;
+  	position: absolute;
+  	overflow: hidden;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+  	text-align: center;
 
 }
 
-#elus img{
-width: 100%;
+#élus{
+	width:100%;
+	padding-bottom:10px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
+#élus img{
+	width: 100%;
 
+}
+
+#elusmobile {
+	display: none;
+}
 
 /*------------------------------FIN DES ELUS----------------------------------*/
 /*-----------------------------------DECHETS-------------------------------------*/
-
 
 #dechetterie #lieu, #dechetterie #un,  #dechetterie #deux  {
 	display: inline-block;
@@ -388,14 +380,17 @@ width: 100%;
 	text-align: center;
 
 }
+
  #un , #deux , #fermeture {
 	text-align: center;
 
 } 
+
 #dechetterie #heures{
 	text-align: center;
 
 }
+
 #dechetterie h3{
 	padding-left:1em; 
 	margin: 0px;
@@ -429,6 +424,7 @@ width: 100%;
 #dechetterie2 {
 	text-align: center;
 }
+
 #dechetterie #attention h3{
 	padding-left:0em; 
 	margin: 0px;
@@ -440,7 +436,6 @@ width: 100%;
 
 }
 
-
 #ramassagedechet li:before{
 	content: "→ ";
 
@@ -449,10 +444,9 @@ width: 100%;
 /*------------------------------FIN DES DECHETS----------------------------------*/
 /*-----------------------------------RESULTAT ELECTIONS-------------------------------------*/
 
-
 #resultatelection1 p,#resultatelection1 img{
-display: inline-block;
-vertical-align: top;
+	display: inline-block;
+	vertical-align: top;
 
 }
 
@@ -467,18 +461,21 @@ vertical-align: top;
 	position: right;
 
 }
+
 #resultatelection1{
 	margin: 1em;
 
 }
+
 #resultatelection2 table{
     border-collapse: collapse;
     text-align: center;
     margin-left:auto;
 	margin-right: auto;
-
 	overflow: auto;
+
 }
+
 #resultatelection2 th,#resultatelection2 tr,#resultatelection2 td{
 	border: 1px solid black;
 	width: 10%;
@@ -493,17 +490,18 @@ vertical-align: top;
 }
 
 #resultatelection2 th{
-background-color: grey;
+	background-color: grey;
 
 }
 
 #resultatelection2 td{
-background-color: lightgrey;
+	background-color: lightgrey;
 
 }
 
 #resultatelectionmobile{
 	display: none;
+
 }
 
 /*------------------------------FIN DES RESULTAT ELECTIONS----------------------------------*/
@@ -511,7 +509,9 @@ background-color: lightgrey;
 
 #demarchesetatcivil li {
 	list-style-type: none;
+
 }
+
 #demarchesetatcivil li:before{
 	content: "→ ";
 
@@ -528,25 +528,24 @@ background-color: lightgrey;
 
 #listeselectorales ul {
 	margin: 1em;
-}
 
+}
 
 /*------------------------------FIN DES LISTES ELECTORALES----------------------------------*/
 /*-----------------------------------ANNUAIRE-------------------------------------*/
 
-
-#annuaire table
-{
+#annuaire table{
     border-collapse: collapse;
     text-align: center;
-/*    margin-left:auto;
-	margin-right: auto;*/
 	width: 100%;
+
 }
+
 #annuaire th,#annuaire tr,#annuaire td{
 	border: 1px solid black;
 	width: 30%;
 	height: 50px;
+
 }
 
 #annuaire {
@@ -556,19 +555,19 @@ background-color: lightgrey;
 }
 
 #annuaire th{
-
- background-color: grey;
+	background-color: grey;
 
 }
 
 #annuaire td,#annuaire tr{
 	background-color:lightgrey; 
+
 }
 
 #utile {
-
 	width: auto;
 	margin-bottom: 2em;
+
 }
  
 
@@ -590,7 +589,9 @@ background-color: lightgrey;
 	background-color: black;
 	opacity: 0.7;
 	display: none;
+
 }
+
 .lightbox{
 	position: fixed;
 	top: 50%;
@@ -602,7 +603,9 @@ background-color: lightgrey;
 	margin-top: -233px;
 	background-color: black;
 	display: none;
+
 }
+
 .fleche{
 	position: absolute;
 	color: white;
@@ -610,7 +613,9 @@ background-color: lightgrey;
 	font-size: 80px;
 	display: none;
 	align-self: center;
+
 }
+
 .ancreFleche{
 	width: 140px;
 	height: 100%;
@@ -620,30 +625,39 @@ background-color: lightgrey;
 	position: absolute;
 	display: inline-flex;
 	cursor: pointer;
+
 }
+
 .ancreFleche:hover .fleche{
 	display: block;
+
 }
+
 .droite{
 	right: 40px;
+
 }
+
 .ancredroite{
 	right: 0px;
+
 }
 
 .photos img{
 	max-height: 150px;
+
 }
 
 .photofiltre{
 	max-height: 500px;
+
 }
 
 /*------------------------------FIN VILLAGE EN PHOTO---------------------------------*/
 /*-----------------------------------DEMARCHES-------------------------------------*/
 
 #famille p , #famille a , #famille h2, #sante p , #sante a , #sante h2, #travail p , #travail a , #travail h2, #papiers p , #papiers a , #papiers h2, #logement p , #logement a , #logement h2{
-		margin: 0.25em;
+	margin: 0.25em;
 
 }
 
@@ -656,12 +670,12 @@ background-color: lightgrey;
 	list-style-type: none;
 
 }
-#famille, #sante, #travail, #papiers, #logement{
 
+#famille, #sante, #travail, #papiers, #logement{
 	border:solid 2px grey;
 	margin-bottom: 1em;
-}
 
+}
 
 #boutons {
 	vertical-align: top;
@@ -671,6 +685,7 @@ background-color: lightgrey;
 #boutons input {
 	width: 100%;
 	height: 30px;
+
 }
 
 #demarches {
@@ -687,15 +702,17 @@ background-color: lightgrey;
 
 /*------------------------------FIN DEMARCHES---------------------------------*/
 /*------------------------------RPI---------------------------------*/
+
 #widehem, #halinghen{
 	text-align: center;
 	width: 49%;
 	display: inline-block;
 	vertical-align: top;
+
 }
 
 #widehem img, #halinghen img, #leturne img, #frencqmairie img, #frencqcp img{
-max-height:250px; 
+	max-height:250px; 
 
 }
 #leturne, #frencqmairie, #frencqcp{
@@ -708,23 +725,22 @@ max-height:250px;
 
 /*-----------------------------------FIN RPI-------------------------------------*/
 /*-----------------------------------ASSOCIATIONS-------------------------------------*/
-#assos #usfrencq , #assos #troisiemeage {
-
-	border: solid grey;
-	margin-top: 1em;
-	padding: 1em;
-}
-
-#assos #usfrencq h2, #assos #troisiemeage h2 {
-	margin-top: 0em;
-}
 
 #assos table {
-	background-color: yellow;
 	width: 100%;
 	text-align: center;
 	border: solid 1px black;
+	margin-bottom: 1em;
+
 }
+
+#assos td{
+	width: 33%;
+
+}
+
+/*-----------------------------------FIN ASSOS-------------------------------------*/
+/*-----------------------------------COMMERCANT-------------------------------------*/
 
 #commerces, #artisants{
 	display: inline-block;
@@ -733,148 +749,177 @@ max-height:250px;
 	vertical-align: top;
 	padding: 2em;
 	padding-top: 0em;
+
 }
 
 #commerces{
 	border-right: solid grey 2px;
+
 }
 
 .commerçant, .artisants{
-
 	width: 100%;
 	border-bottom: solid grey 1px;
+
 }
-/*--------------------------------------*/
+
+/*------------FIN COMMERCANT ---------------------*/
+/*---------------------REALISATION-----------------*/
+
 .avant, .apres {
 	display: inline-block;
 	width: 49.5%;
 	text-align: center;
 }
 
-.avant img, .apres img{
-width: 80%;
+.avant img, .apres img{	
+	max-width: 70%;
+	max-height: 250px;
+	vertical-align: middle;
 
 }
 
 #photos img {
 	max-width:250px;
+
 }
 
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
+/* ----------------------- MEDIAS QUERIES -----------------------*/
 
-
-/* ----------------------- MEDIAS QUERIES -----------------------*/
-/* ----------------------- MEDIAS QUERIES -----------------------*/
-/* ----------------------- MEDIAS QUERIES -----------------------*/
-/* ----------------------- MEDIAS QUERIES -----------------------*/
-/* ----------------------- MEDIAS QUERIES -----------------------*/
-/* ----------------------- MEDIAS QUERIES -----------------------*/
-/* ----------------------- MEDIAS QUERIES -----------------------*/
-/* ----------------------- MEDIAS QUERIES -----------------------*/
-/* ----------------------- MEDIAS QUERIES -----------------------*/
-/* ----------------------- MEDIAS QUERIES -----------------------*/
-/* ----------------------- MEDIAS QUERIES -----------------------*/
-/* ----------------------- MEDIAS QUERIES -----------------------*/
 @media(-webkit-min-device-pixel-ratio:2 ){
-} 
+}
+
  /*****Medias queries max w640******/
+
 @media only screen and (max-device-width : 640px){
 
 	/* Talle du conteneur */
 
-	#conteneurvide {
+	#conteneurimg {
 		height: 100px;
-	}
-
-	body {
-		background-image: url(../images/mairiemediasqueries.jpg) ;
-		background-size:100%;
-		background-repeat: repeat;
-	    background-attachment: fixed;
-	    background-position: center top; 
 
 	}
 
 	footer #ouverture , footer #contact , footer #copyright{
-	width: 100%;
+		width: 100%;
 
 	}
 
 	/*------------------menu ---------------------*/
+
 	nav ul {
-	 display:block;
-	 text-align: center;
-	 margin: 0;
-	 padding: 0;	
+		display:block;
+		text-align: center;
+		margin: 0;
+		padding: 0;	
 
 	}
 
 	nav ul li {
-	 display: block;
-	 width: 100%;
+		display: block;
+		width: 100%;
+	
 	}
 
 	nav ul li a {
-	 display:block;
-	 width:auto;
-	 text-align: center;
+		display:block;
+		width:auto;
+		text-align: center;
+	
 	}
 
 	nav ul li a:hover {
-	 color:white;
-	 background-color: #666666;
+		color:white;
+		background-color: #666666;
 
 	}
 
 	nav ul li:hover ul {
-	 display:block;
-	 margin-left: 0px;
-	 width:90%;
+		display:block;
+		margin-left: 0px;
+		width:90%;
 
 	}
 
 	#sousmenu:before{
-			
-			content: "↓ ";
-	}
-	#sousmenu:after{
+		content: "↓ ";
 
-			content: " ↓";
+	}
+
+	#sousmenu:after{
+		content: " ↓";
+
 	}
 
 	/*------------------FIN MENU ---------------------*/
 	/*------------------INDEX ---------------------*/
-	#photomrmaire {
-		display: none;
-	}
 
-	#motdumaire , #avenir{
+	#avenir{
 		width: auto;
+	
 	}
 
-	#accueilgauche, #mairie iframe {
-		width: 70%;
+	#accueilgauche{
+		width: 100%;	
+
 	}
 
 	#mairie #coordonnees {
 	 	width: 100%;
 	 	padding-bottom: 1em;
-	 }
+	
+	}
 
 	#mairie {
 	 	padding-top:0em;
-	 }
+	
+	}
+
+	#mairie iframe {
+	 	width:auto;
+	
+	}
 
 	/*------------------FIN MENU ---------------------*/
 	/*------------------ELUS ---------------------*/
 
-	.container {
-	  width: 25%;
+	#élus {
+	  	display: none;
+
+	}
+
+	#elusmobile{
+		display: block;
+
+	}
+
+	#elusmobile h3{
+		margin: 0;
+
+	}
+
+	#elusmobile p{
+		margin: 0;
+		padding-bottom: .5em;
+
 	}
 
 	/*------------------FIN ELUS ---------------------*/
 	/*------------------RESULTAT ELECTIONS ---------------------*/
 	#resultatelection2 table{
 		display: none;
+	
 	}
 
 	#resultatelection1 img{
@@ -889,19 +934,20 @@ width: 80%;
 
 	#resultatelectionmobile{
 		display: block;
-	}
 
+	}
 
 	/*------------------FIN INDEX ---------------------*/
 	/*------------------CA2BM---------------------*/
 
 	#com1 , #com2 , #com3 , #competences{
-
 		display: none;
+
 	}
 
 	#communesmobile, #competencesmobile {
 		display: block;
+
 	}
 
 	#carteca2bm{
@@ -909,12 +955,14 @@ width: 80%;
 
 	}
 
-
 	#coordomap {
 		width: auto;
+
 	}
+
 	#coordomap iframe{
 		width: 100%;
+
 	}
 
 	/*------------------FIN CA2BM ---------------------*/
@@ -923,6 +971,7 @@ width: 80%;
 	#boutons{
 		width: 100%;
 		display: block;
+	
 	}
 
 	#famille , #sante , #travail , #papiers , #logement {
@@ -933,6 +982,7 @@ width: 80%;
 	#demarches {
 		width: 100%;
 		margin-left: 0em;
+	
 	}
 
 
@@ -946,28 +996,30 @@ width: 80%;
 
 	}
 
-
 	/*------------------FIN DEMARCHES ---------------------*/
 	/*-----------------------------------DECHETS-------------------------------------*/
-
-
 
 	#dechetterie h3{
 		padding-left:0em; 
 		margin: 0px;
+
 	}
 
 	#dechetterie21 img{
-
 		width: 100%; 	
+
 	}
+
 	#dechetterie h3{
 		padding-left: 0em;
+
 	}
 
 	#dechetterie2 iframe{
 		width: 100%;
+
 	}
+
 	#dechetterie #attention h3{
 		padding-left:0em; 
 		margin: 0px;
@@ -978,7 +1030,6 @@ width: 80%;
 		list-style-type: none;
 
 	}
-
 
 	#ramassagedechet li:before{
 		content: "→ ";
@@ -995,102 +1046,36 @@ width: 80%;
 
 	/*------------------------------FIN DE L'ANNUAIRE----------------------------------*/
 
+	.photofiltre{
+		max-height: 200px;
 
-/*
-.voile{
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	height: 100%;
-	width: 100%;
-	background-color: black;
-	opacity: 0.7;
-	display: none;
-}
-.lightbox{
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	width: auto;
-	height: auto;
-	border: 20px solid black;
-	margin-left: -340px;
-	margin-top: -233px;
-	background-color: black;
-	display: none;
-}
-*/
+	}
+
+	.lightbox{
+		top: 50%;
+		left :95%;
+
+	}
 
 
+	.ancreFleche{
+		width: 70px;
+		height: 100%;
+		padding: 0;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	}
 }
 
  /*****IPAD******/
 @media only screen and (min-device-width : 645px) and (max-device-width : 1024px){
 
-
-	#conteneurvide {
-		height: 150px;
+	#conteneurimg {
+		height: 200px;
 	
 	}
 
-	body {
-		background-image: url(../images/mairiemediasqueries.jpg) ;
-		background-size:100%;
-		background-repeat: repeat;
-	    background-attachment: fixed;
-	    background-position: center top; 
-
-	}
-
 	footer #ouverture , footer #contact , footer #copyright{
-	width: 100%;
+		width: 100%;
 
 	}
 
@@ -1098,59 +1083,53 @@ width: 80%;
 
 	#accueilgauche{
 		width: 100%;
-	}
-
-	#motdumaire{
-		width: 70%;
-	}
-
-	#photomrmaire{
-		width: 20%;
-	}
-
-	#photomrmaire , #motdumaire {
-		display: inline-block;
-		
-	}
-
-	#motdumaire h2 {
-		margin-top: 0px;
+	
 	}
 
 	#avenir{
 		width: auto;
+
 	}
 
 	#coordoonees{
 		overflow-wrap: break-word;
+
 	}
 
 	#mairie #coordoonnees{
 		width: 33%
+
 	}
 
 	#mairie iframe {
 		width: 66%;
 		height: 350px;
+
 	}
+
+		/*-------CA2BM------------*/
 
 	#carteca2bm{
 		display: none;
+
 	}
 
 	#communes {
 		width: 100%;
+
 	}
 
 	#coordomap iframe{
 		width: 100%;
+
 	}
 
-
+		/*--------------Demarches------------*/
 
 	#boutons{
 		width: 40%;
 		display: block;
+
 	}
 
 	#famille , #sante , #travail , #papiers , #logement {
@@ -1161,6 +1140,7 @@ width: 80%;
 	#demarches {
 		width: 50%;
 		margin-left: 0em;
+
 	}
 
 
@@ -1176,57 +1156,6 @@ width: 80%;
 
 	#boutons , #demarches {
 		display: inline-block;
-	}
 
-
-
-}
-
-
-/*--------------ADAPTATION TAILLE POUR LES RESOLUTIONS ----------------*/
-/*--------------ADAPTATION TAILLE POUR LES RESOLUTIONS ----------------*/
-/*--------------ADAPTATION TAILLE POUR LES RESOLUTIONS ----------------*/
-/*1ere resolution popualaire en France 1366x768*/
-@media (max-width:1336px) and (max-height:768px){
-
-	#conteneurvide {
-		height: 375px;
-	
-	}
-}
-
-/*2eme resolution populaire en France 1920x1080*/
-@media (max-width:1920px) and (max-height:1080px){
-
-	#conteneurvide {
-		height:550px;
-	
-	}
-}
-
-/*3eme resolution populaire en France 1600x900*/
-@media (max-width:1600px) and (max-height:900px){
-
-	#conteneurvide {
-		height:400px;
-	
-	}
-}
-
-/*4eme resolution populaire en France 1440x900*/
-@media (max-width:1440px) and (max-height:900px){
-
-	#conteneurvide {
-		height:450px;
-	
-	}
-}
-
-/*5eme resolution populaire en France 1280x800*/
-@media (max-width:1280px) and (max-height:800px){
-
-	#conteneurvide {
-		height:375px;
-	
 	}
 }
