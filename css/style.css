@@ -751,9 +751,9 @@ footer #ouverture h2{
 /*-----------------------------------FIN ASSOS-------------------------------------*/
 /*-----------------------------------COMMERCANT-------------------------------------*/
 
-#commerces, #artisants{
+#activite1, #activite2{
 	display: inline-block;
-	width: 40%;
+	width: 44%;
 	min-height: 400px;
 	vertical-align: top;
 	padding: 2em;
@@ -761,12 +761,12 @@ footer #ouverture h2{
 
 }
 
-#commerces{
+#activite1{
 	border-right: solid grey 2px;
 
 }
 
-.commerçant, .artisants{
+.profession{
 	width: 100%;
 	border-bottom: solid grey 1px;
 
@@ -896,7 +896,7 @@ footer #ouverture h2{
 	}
 
 	#mairie iframe {
-	 	width:auto;
+	 	width:100%;
 	
 	}
 
@@ -1109,6 +1109,17 @@ footer #ouverture h2{
 		padding-top: 5px;
 
 	}
+
+	#activite1, #activite2{
+		display: block;
+		width: 100%;
+		padding: 0em;
+		padding-top: 0em;
+		border-right: none;
+
+	}
+
+
 }
 /*****IPAD******/
 /*****IPAD******/
